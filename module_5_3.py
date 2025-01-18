@@ -11,7 +11,7 @@ class House:
             return self.number_of_floors == other.number_of_floors
         return False
 
-    def __It__(self, other):
+    def __lt__(self, other):
         if isinstance(other, House):
             return self.number_of_floors < other.number_of_floors
 
